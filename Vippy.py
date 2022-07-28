@@ -51,4 +51,4 @@ updater.dispatcher.add_handler(
     )
 )
 drop_pending_updates(True)
-updater.idle()
+
