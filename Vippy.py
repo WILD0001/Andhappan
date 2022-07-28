@@ -10,7 +10,7 @@ from handlers import all_handlers
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
-token = '5237132079:AAHqZE8CLe3bsxAxQ8MRTcLAYjhLQqB7bKw' 
+token="5237132079:AAHqZE8CLe3bsxAxQ8MRTcLAYjhLQqB7bKw" 
 
 updater = Updater(token)
 for handler in all_handlers:
