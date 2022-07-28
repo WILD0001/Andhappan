@@ -10,9 +10,9 @@ from handlers import all_handlers
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
-token="5237132079:AAHqZE8CLe3bsxAxQ8MRTcLAYjhLQqB7bKw" 
 
-updater = Updater(token)
+
+updater = Updater(token="5237132079:AAHqZE8CLe3bsxAxQ8MRTcLAYjhLQqB7bKw")
 for handler in all_handlers:
     if len(handler) == 2:
         updater.dispatcher.add_handler(
@@ -50,5 +50,6 @@ updater.dispatcher.add_handler(
         )
     )
 )
-drop_pending_updates(True)
+updater.start_polling(clean=True)
+updater.idle()
 
