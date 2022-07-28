@@ -11,7 +11,7 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 TELEGRAM_TOKEN = '5237132079:AAHqZE8CLe3bsxAxQ8MRTcLAYjhLQqB7bKw' 
-token = ['TELEGRAM_TOKEN']
+token = os.environ['TELEGRAM_TOKEN']
 
 updater = Updater(token)
 for handler in all_handlers:
