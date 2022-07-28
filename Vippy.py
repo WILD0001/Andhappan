@@ -50,5 +50,5 @@ updater.dispatcher.add_handler(
         )
     )
 )
-updater.start_polling(clean=True)
+updater.drop_pending_updates(clean=True)
 updater.idle()
